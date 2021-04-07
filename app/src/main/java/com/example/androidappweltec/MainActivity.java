@@ -116,7 +116,7 @@ public void onClick(View v){
 @Override
 public void onClick(View v) {
         String ans1 = String.valueOf(ans);
-        answer.setText(ans1);
+        answer.setText(ans1);//app
         ans= 0;
            }
         });

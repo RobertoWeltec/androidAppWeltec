@@ -6,6 +6,14 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -36,3 +44,82 @@ public class MainActivity extends AppCompatActivity {
         answer = findViewById(R.id.answer);
     }
 }
+add.setOnClickListener(new View.OnClickListener() {
+@Override
+public void onClick(View v){
+        String num1=no1.getText().toString();
+        String num2=no2.getText().toString();
+
+        if(num1.isEmpty()||num2.isEmpty()){
+        Toast.makeText(getApplicationContext(),"Enter Numbers",Toast.LENGTH_SHORT).show();
+        }
+        else{
+        double a=Double.parseDouble(no1.getText().toString());
+        double b=Double.parseDouble(no2.getText().toString());
+        ans=a+b;
+           }
+        }
+        });
+
+        sub.setOnClickListener(new View.OnClickListener() {
+@Override
+public void onClick(View v){
+        String num1=no1.getText().toString();
+        String num2=no2.getText().toString();
+
+        if(num1.isEmpty()||num2.isEmpty()){
+        Toast.makeText(getApplicationContext(),"Enter Numbers",Toast.LENGTH_SHORT).show();
+        }
+        else{
+        double a=Double.parseDouble(no1.getText().toString());
+        double b=Double.parseDouble(no2.getText().toString());
+        ans=a-b;
+          }
+        }
+        });
+
+        mul.setOnClickListener(new View.OnClickListener() {
+@Override
+public void onClick(View v){
+        String num1=no1.getText().toString();
+        String num2=no2.getText().toString();
+
+        if(num1.isEmpty()||num2.isEmpty()){
+        Toast.makeText(getApplicationContext(),"Enter Numbers",Toast.LENGTH_SHORT).show();
+        }
+        else{
+        double a=Double.parseDouble(no1.getText().toString());
+        double b=Double.parseDouble(no2.getText().toString());
+        ans=a*b;
+            }
+         }
+        });
+        div.setOnClickListener(new View.OnClickListener() {
+@Override
+public void onClick(View v){
+        String num1=no1.getText().toString();
+        String num2=no2.getText().toString();
+
+        if(num1.isEmpty()||num2.isEmpty()){
+        Toast.makeText(getApplicationContext(),"Enter Numbers",Toast.LENGTH_SHORT).show();
+        }else{
+        double a=Double.parseDouble(no1.getText().toString());
+        double b=Double.parseDouble(no2.getText().toString());
+        ans=a/b;
+        else
+        Toast.makeText(getApplicationContext(), "Enter Valid Numbers", Toast.LENGTH_SHORT).show();
+            }
+          }
+        });
+
+        equal.setOnClickListener(new View.OnClickListener() {
+@Override
+public void onClick(View v) {
+        String ans1 = String.valueOf(ans);
+        answer.setText(ans1);
+        ans= 0;
+           }
+        });
+
+      }
+   }

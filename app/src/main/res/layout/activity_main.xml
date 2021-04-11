@@ -133,6 +133,14 @@
             android:textSize="25sp" />
     </LinearLayout>
 
+    <EditText
+        android:id="@+id/buyForeignExchange"
+        android:layout_width="172dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Buy NZD/USD" />
+
 
 </LinearLayout>
     layout>

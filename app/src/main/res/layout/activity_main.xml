@@ -1,26 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorAccent"
     android:orientation="vertical"
-    android:padding="20dp"
+    android:padding="30dp"
     tools:context=".MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="20dp"
         android:text="CALCULATOR"
         android:textColor="@android:color/black"
-        android:textSize="25sp" />
+        android:textSize="30sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="30dp"
         android:orientation="horizontal">
 
         <EditText
@@ -35,8 +34,8 @@
             android:id="@+id/second_no"
             android:layout_width="102dp"
             android:layout_height="59dp"
-            android:ems="10"
-            android:hint="Enter" />
+            android:ems="20"
+            android:hint="Click here" />
 
     </LinearLayout>
 
@@ -44,14 +43,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
-        android:orientation="horizontal">
+        android:orientation="vertical">
 
         <TextView
-            android:id="@+id/answer"
+            android:id="@+id/response"
             android:layout_width="102dp"
             android:layout_height="59dp"
             android:layout_marginHorizontal="50dp"
-            android:hint="ans"
+            android:hint="response"
             android:textSize="35sp" />
 
     </LinearLayout>
@@ -67,18 +66,18 @@
             android:id="@+id/sub"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
+            android:layout_marginBottom="20dp"
             android:text="-"
-            android:textSize="25sp" />
+            android:textSize="30sp" />
 
         <Button
             android:id="@+id/add"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
+            android:layout_marginBottom="20dp"
             android:text="+"
-            android:textSize="25sp"
-            tools:ignore="OnClick" />
+            android:textSize="30sp"
+            tools:ignore="Clickhere" />
 
         <Button
             android:id="@+id/addcrypto"
@@ -112,13 +111,53 @@
             android:textColor="@android:color/white"
             android:textSize="30sp" />
         <Button
-            android:id="@+id/equals"
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="submit"
+            android:textSize="50sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="OURNEWCALCULATOR"
+            android:textColor="@android:color/Blue"
+            android:textSize="30sp" />
+        <Button
+            android:id="@+id/percentage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:text="="
-            android:textSize="35sp" />
+            android:text="%"
+            android:textSize="25sp" />
     </LinearLayout>
+
+    <EditText
+        android:id="@+id/buyForeignExchange"
+        android:layout_width="172dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Buy NZD/USD" />
+
+    <EditText
+        android:id="@+id/emailAddressField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
 
 
 </LinearLayout>
+    layout>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/activity_main"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingBottom="@dimen/activity_vertical_margin"
+android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin"
+tools:context="com.sample.foo.samplecalculator.MainActivity">

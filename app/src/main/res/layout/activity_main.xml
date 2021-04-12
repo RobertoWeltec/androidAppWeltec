@@ -141,6 +141,13 @@
         android:inputType="textPersonName"
         android:text="Buy NZD/USD" />
 
+    <EditText
+        android:id="@+id/emailAddressField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
 
 </LinearLayout>
     layout>
